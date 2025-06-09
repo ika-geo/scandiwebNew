@@ -45,7 +45,7 @@ function CartItem({ data }) {
     }
 
     return (
-        <div data-testid="cart-total" className="flex justify-between mb-10">
+        <div className="flex justify-between mb-10">
             <div className="flex justify-between w-[60%]">
                 {/* details */}
                 <div>

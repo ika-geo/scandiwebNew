@@ -37,14 +37,14 @@ function Cart() {
     return (
         <div>
             <button
-                data-testid="cart-btn"
+                data-testid='cart-btn'
                 onClick={handleOpenCloseCart}
                 className="cursor-pointer relative"
             >
                 <img src={require('../src/media/cart.png')} alt="cart" />
                 {totalItems > 0 && (
                     <div className="absolute top-[-15px] right-[-15px] px-1 min-h-[23px] min-w-[23px] rounded-full bg-black text-white text-center flex justify-center items-center">
-                        <span>{totalItems}</span>
+                        <span data-testid="cart-total">{totalItems}</span>
                     </div>
                 )}
             </button>
